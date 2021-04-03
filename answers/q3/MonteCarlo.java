@@ -71,8 +71,6 @@ public class MonteCarlo {
 
 
 
-
-
     // The Class MCCount generates points on a cartesian plane.
     // It will determine which points are within a circle with radius = 1
     // It will also determine how many points were generated.
@@ -98,11 +96,6 @@ public class MonteCarlo {
                     in_circle++;
                 }
             }
-
-        }
-
-        
-    }
-
-    
+        }   
+    }    
 }
