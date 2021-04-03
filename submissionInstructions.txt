@@ -1,0 +1,20 @@
+The following instructions will be applied to all assignments.    This text is also posted in the Canvas >> Modules >> RESOURCES. 
+
+Instructions for Submission of Assignments
+
+For the descriptive questions submit a PDF file.
+For programming questions add "comments" to the source code, including:
+Description for "classes" and "methods" (functions in C)       
+Comments for "variables" and most of the statements .
+A "ReadMe.txt" file that clearly states the steps for compiling and running the source code, including the results for sample input.
+Put all files in a folder with the name: "Gx-Ay-ddmm2021" where “x” is group number, “y” is assignment number, “dd” is date, and “mm” is month. Submit the "zipped" file of this folder to the Canvas system by the due date.
+Each group will submit only one assignment for the group.
+One of the students in the group will submit the assignment.
+There will be 20% penalty for a one-day late submission and after that the dropbox will be closed.
+Do Notsend your assignment by email to the Instructor or the TA. It will not be accepted.
+Put the following statement in a separate word document and submit it with your assignment:
+This assignment (Assignment X) has been discussed in our group practice meetings and the assignment solutions (including the source code) have been developed by our group (Group Y).
+
+Name:                          PirateID:
+Name:                          PirateID:
+Name:                          PirateID:
