@@ -1,4 +1,4 @@
-//Author:           Trevor Strobel, Sutton Tuck
+//Author:           Trevor Strobel
 //Date:             4/2/21
 //Assn:             CSCI-3000 Assignment2
 //Question:         2
@@ -17,25 +17,33 @@
 
 import java.util.concurrent.*;
 
+/*
+the class CalcFib is used to calculate the fibonacci sequence
+for a length of 'fibLength' numbers. As it implements Callable,
+objects of this class will be run in a child thread.
+*/
 class CalcFib implements Callable<int[]> {
 
-    private int fibLength;
+    private int fibLength; //The length of the fib sequence
 
+    //constructor - The length is passed from the parent.
     public CalcFib(int fibLength){
         this.fibLength = fibLength;
     }
     
     //The thread will execute in this method.
     public int[] call() {
-        //calculation of fib sequence goes here. 
-
+        
         //declare the array
         int fibSequence[] = new int[fibLength];
 
+        //initializing the first two elements of the array to match
+        //the prerequisites of the fibonacci sequence.
         fibSequence[0] = 0;
         fibSequence[1] = 1;
 
-        //populate fib array
+        //populates 'fibSequence' where each element ascending is the
+        //next number in the fibonacci sequence.
         for(int i = 2; i < fibLength; i++){
             fibSequence[i] = fibSequence[i-1] + fibSequence[i-2];
         }
@@ -45,22 +53,25 @@ class CalcFib implements Callable<int[]> {
 }
 
 
+//The main class. The program executes this class first.
 class Fibonacci {
     public static void main(String[] args) {
-        int fib = 0;
+        int fib = 0; //init the length of the sequence.
         
         
 
-        //get the input from user.
+        //parsing the command line arguments.
         if(args.length > 0){
            try{
                fib = Integer.parseInt(args[0]);
            } catch(NumberFormatException ne){
+               //If the user entered characters that can't be parsed as an integer
             System.out.println("please enter an integer as a command line argument.");
             //Exit JVM
             System.exit(0);
            }
         } else {
+            //This fires if the user did not provide a command line argument to the program.
             System.out.println("please enter an integer as a command line argument.");
             //Exit JVM
             System.exit(0);
@@ -90,9 +101,11 @@ class Fibonacci {
 
 
         } catch (InterruptedException | ExecutionException ie) {
+            //catching exceptions caused by the child thread not completing successfully. 
             System.out.println("Exception caught: " + ie);
         }
         
+        //closing the pool down. 
         t1.shutdown();
     }
 }
