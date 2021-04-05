@@ -16,7 +16,7 @@ public class RR implements Algorithm {
     private int tasksRun;  // the number of tasks in the sched file
     
 
-    //Shortest Job First object constructor. 
+    //RR (Round Robin) object constructor. 
     public RR(List<Task> queue) {
         this.queue = queue;
         tasksRun = queue.size();
@@ -30,13 +30,16 @@ public class RR implements Algorithm {
         
 
         //Prints the sorted queue to the command line. 
-        System.out.println("SJF Scheduling \n");
+        System.out.println("Round Robin Scheduling \n");
 
         while(!queue.isEmpty()) {
             currentTask = pickNextTask();
 
             CPU.run(currentTask, currentTask.getBurst());
 
+            //the CPU runs in bursts of 10 units. if the remainder of the task's
+            // burst is above 0 after running, then it gets put at the end of 
+            // the queue. 
             if((currentTask.getBurst() - 10) > 0){
                 Task temp = currentTask;
                 temp.setBurst(currentTask.getBurst() -10);
