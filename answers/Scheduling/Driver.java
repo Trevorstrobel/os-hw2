@@ -53,7 +53,7 @@ public class Driver
                 scheduler = new Priority(queue);
                 break;
             case "RR":
-                //scheduler = new RR(queue);
+                scheduler = new RR(queue);
                 break;
             case "PRI-RR":
                 //scheduler = new PriorityRR(queue);
