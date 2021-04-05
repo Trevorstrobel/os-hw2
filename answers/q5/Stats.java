@@ -1,7 +1,7 @@
 /**
  * @author Jan Andre Verceles-Zara
  */
-package Q5Assg2;
+
 
 import java.util.Scanner;
 public class Stats {
