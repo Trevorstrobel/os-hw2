@@ -51,11 +51,12 @@ public class Stats {
                 unitSet[1] = max;
             }
         });
-        
-        avgThread.start();
+        //each thread is started
+        avgThread.start(); 
         minThread.start();
         maxThread.start();
     try {
+	//each thread is into a join/wait state where each thread awaits termination    
         avgThread.join();
         minThread.join();
         maxThread.join();
