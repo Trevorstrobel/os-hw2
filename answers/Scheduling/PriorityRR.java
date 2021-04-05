@@ -52,7 +52,7 @@ public class PriorityRR implements Algorithm {
         }
     }
 
-    // prioritySort() sorts the ArrayList<Task> 
+    // prioritySort() sorts the List<Task> 
     // 'queue' based on priority. 
     public List<Task> prioritySort(List<Task> queue2){
         
