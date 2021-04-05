@@ -1,0 +1,17 @@
+Consider the following code segment:
+pid t pid;
+pid = fork();
+if (pid == 0) {
+fork();
+thread create( . . .);
+}
+fork();
+A. How many unique processes are created?
+  The first fork makes two processes due to the fork copying the initial process 2
+  the third process is made via the fork in the if statement 1
+  Outside the if another is called to duplicate the three processes made prior 3
+  2+1+3 = 6 Processes
+
+B. How many unique threads are created?
+  There are 8 threads created overall, two initially and two for each of the three processes that can execute.
+  2+(2*3) = 8
