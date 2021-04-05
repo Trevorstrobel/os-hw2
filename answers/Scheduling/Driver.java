@@ -47,16 +47,16 @@ public class Driver
                 scheduler = new FCFS(queue);
                 break;
             case "SJF":
-                scheduler = new SJF(queue);
+                //scheduler = new SJF(queue);
                 break;
             case "PRI":
-                scheduler = new Priority(queue);
+                //scheduler = new Priority(queue);
                 break;
             case "RR":
-                scheduler = new RR(queue);
+                //scheduler = new RR(queue);
                 break;
             case "PRI-RR":
-                scheduler = new PriorityRR(queue);
+                //scheduler = new PriorityRR(queue);
                 break;
             default:
                 System.err.println("Invalid algorithm");
