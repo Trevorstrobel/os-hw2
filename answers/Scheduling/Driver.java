@@ -47,7 +47,7 @@ public class Driver
                 scheduler = new FCFS(queue);
                 break;
             case "SJF":
-                //scheduler = new SJF(queue);
+                scheduler = new SJF(queue);
                 break;
             case "PRI":
                 //scheduler = new Priority(queue);
