@@ -1,3 +1,7 @@
+/**
+ * @author Sutton Tuck
+ */
+
 import java.net.*;
 import java.io.*;
 
