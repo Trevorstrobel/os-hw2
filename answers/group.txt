@@ -1,0 +1,7 @@
+This assignment (Assignment 2) has been discussed in our group practice 
+meetings and the assignment solutions (including the source code) have been developed 
+by our group (Group 13).
+
+Name: Trevor Strobel		PirateID: strobelt09
+Name: Sutton Tuck		PirateID: tucks17
+Name: Jan-Andre Verceles-Zara	PirateID: verceleszaraj17
